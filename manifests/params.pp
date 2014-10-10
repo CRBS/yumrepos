@@ -1,5 +1,13 @@
 class yumrepos::params {
 
+
+  # CRBS x86_64 Settings.
+  $crbs_x86_64_url = "http://yum.crbs.ucsd.edu/repos/crbs-7-x86_64"
+  $crbs_x86_64_enabled = '1'
+  $crbs_x86_64_gpgcheck = '0'
+  $crbs_x86_64_includepkgs = absent
+  $crbs_x86_64_exclude = absent
+
   # EPEL Settings.
   $epel_url = "http://download.fedoraproject.org/pub/epel/${::operatingsystemmajrelease}/${::architecture}"
   $epel_enabled = '1'
